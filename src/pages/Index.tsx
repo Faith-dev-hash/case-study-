@@ -8,7 +8,9 @@ import { Footer } from '@/components/Footer';
 const Index = () => {
   return (
     <div className="flex w-full flex-col items-center relative bg-white">
-      <Header />
+      <div className="w-full flex justify-center px-5">
+        <Header />
+      </div>
       <main>
         <Hero />
         <CaseStudies />
