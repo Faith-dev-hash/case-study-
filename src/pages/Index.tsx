@@ -1,12 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import { Header } from '@/components/Header';
+import { Hero } from '@/components/Hero';
+import { CaseStudies } from '@/components/CaseStudies';
+import { Testimonials } from '@/components/Testimonials';
+import { Footer } from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="flex w-full flex-col items-center relative bg-white">
+      <Header />
+      <main>
+        <Hero />
+        <CaseStudies />
+        <Testimonials />
+        <img
+          src="https://api.builder.io/api/v1/image/assets/TEMP/672b902679b5b93444c4db7481df79a2fe6131f2?width=2880"
+          alt="Call to action banner"
+          className="flex flex-col justify-center items-center gap-2.5 self-stretch w-full"
+        />
+      </main>
+      <Footer />
     </div>
   );
 };
