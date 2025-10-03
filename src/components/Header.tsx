@@ -63,6 +63,21 @@ export const Header: React.FC = () => {
           <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </button>
+
+      {isMenuOpen && (
+        <nav className="md:hidden absolute top-full left-0 right-0 mt-4 bg-[rgba(8,8,8,0.95)] backdrop-blur-2xl rounded-[20px] mx-4 p-6 flex flex-col gap-4 z-[999]">
+          {navigationItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="text-white text-lg font-medium cursor-pointer hover:text-[#FFE21B] transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      )}
     </header>
   );
 };
