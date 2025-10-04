@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="flex w-full flex-col items-center relative bg-white">
+    <div className="flex w-full flex-col items-center relative overflow-x-hidden bg-white">
       <div className="w-full flex justify-center px-5">
         <Header />
       </div>
