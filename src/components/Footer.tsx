@@ -82,29 +82,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="flex w-full flex-col justify-center items-start gap-2.5 bg-[#0A0919] pt-10 pb-[110px] px-20 max-md:pt-10 max-md:pb-20 max-md:px-10 max-sm:pt-[30px] max-sm:pb-[60px] max-sm:px-5">
       <div className="flex justify-between items-center self-stretch max-w-screen-xl w-full mx-auto my-0 max-md:flex-col max-md:gap-10 max-md:items-start max-sm:gap-[30px]">
-        <div className="flex w-[323px] flex-col items-start gap-[17px] max-md:w-full max-sm:gap-[15px]">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/ff82a3d23a64f9499af0d6e694b7238a148aab2b?width=330"
-            alt="VonTech Group Logo"
-            className="w-[165px] h-[45px] max-sm:w-[140px] max-sm:h-[38px]"
-          />
-          <div className="flex items-start gap-5 self-stretch max-sm:gap-[15px]">
-            {socialLinks.map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                className={`flex w-[50px] justify-center items-center ${social.bgColor} px-0 py-[12.5px] rounded-[25px] max-sm:w-[45px] max-sm:px-0 max-sm:py-2.5 hover:opacity-80 transition-opacity`}
-                aria-label={social.name}
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
-          <p className="self-stretch text-white text-base font-normal leading-6 max-sm:text-sm">
-            VonTech Group is a cloud consulting company dedicated to helping businesses achieve their cloud goals with innovative solutions.
-          </p>
-        </div>
-        <div className="flex h-[186px] items-start gap-[60px] max-md:w-full max-md:flex-wrap max-md:gap-[30px] max-md:h-auto max-sm:gap-5 max-sm:h-auto">
+        <div className="flex h-[186px] items-start gap-[60px] max-md:w-full max-md:flex-wrap max-md:gap-[30px] max-md:h-auto max-sm:gap-5 max-sm:h-auto max-md:order-2">
           {footerSections.map((section) => (
             <div key={section.title} className="flex flex-col justify-between items-start self-stretch min-w-[98px] max-md:min-w-[150px] max-sm:min-w-[120px]">
               <h3 className="text-white text-xl font-normal leading-[30px] max-sm:text-lg max-sm:mb-2.5">
@@ -121,6 +99,28 @@ export const Footer: React.FC = () => {
               ))}
             </div>
           ))}
+        </div>
+        <div className="flex w-[323px] flex-col items-end gap-[17px] max-md:w-full max-md:items-start max-md:order-1 max-sm:gap-[15px]">
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/ff82a3d23a64f9499af0d6e694b7238a148aab2b?width=330"
+            alt="VonTech Group Logo"
+            className="w-[165px] h-[45px] max-sm:w-[140px] max-sm:h-[38px]"
+          />
+          <div className="flex items-start gap-5 max-sm:gap-[15px]">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                className={`flex w-[50px] justify-center items-center ${social.bgColor} px-0 py-[12.5px] rounded-[25px] max-sm:w-[45px] max-sm:px-0 max-sm:py-2.5 hover:opacity-80 transition-opacity`}
+                aria-label={social.name}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
+          <p className="text-white text-base font-normal leading-6 max-sm:text-sm text-right max-md:text-left">
+            VonTech Group is a cloud consulting company dedicated to helping businesses achieve their cloud goals with innovative solutions.
+          </p>
         </div>
       </div>
       <div className="flex w-full justify-between items-center max-w-screen-xl mx-auto my-0 p-5 border-t-[#191919] border-t border-solid max-sm:p-[15px]">
