@@ -80,8 +80,8 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="flex w-full flex-col justify-center items-start gap-2.5 bg-[#0A0919] pt-10 pb-[110px] px-20 max-md:pt-10 max-md:pb-20 max-md:px-10 max-sm:pt-[30px] max-sm:pb-[60px] max-sm:px-5 overflow-x-hidden">
-      <div className="flex items-start self-stretch max-w-screen-xl w-full mx-auto my-0 gap-[120px] max-md:flex-col max-md:gap-10 max-sm:gap-[30px]">
+    <footer className="flex w-full flex-col justify-center items-start gap-2.5 bg-[#0A0919] pt-10 pb-[110px] max-md:pt-10 max-md:pb-20 max-sm:pt-[30px] max-sm:pb-[60px] overflow-x-hidden">
+      <div className="flex items-start self-stretch max-w-screen-xl w-full mx-auto my-0 px-20 max-md:px-10 max-sm:px-5 gap-[120px] max-md:flex-col max-md:gap-10 max-sm:gap-[30px]">
         <div className="flex w-[323px] flex-col items-start gap-[17px] max-md:w-full max-sm:gap-[15px]">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/ff82a3d23a64f9499af0d6e694b7238a148aab2b?width=330"
